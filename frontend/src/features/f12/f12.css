@@ -1,0 +1,196 @@
+/* Center page with gradient background */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card style */
+.login-card {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  width: 360px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.login-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Title */
+.login-title {
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Inputs */
+.login-form input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 12px 0;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.login-form input:focus {
+  border-color: #6a11cb;
+  box-shadow: 0 0 8px rgba(106, 17, 203, 0.3);
+  outline: none;
+}
+
+/* Button */
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.login-form button:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  transform: scale(1.03);
+}
+
+/* Error message */
+.error-msg {
+  margin-top: 15px;
+  color: #d32f2f;
+  font-weight: 600;
+}
+/* Dashboard container */
+.dashboard-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Controls: job selector + sort */
+.job-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.job-selector label {
+  font-weight: 600;
+  font-size: 16px;
+  color: #333;
+}
+
+.job-selector select,
+.job-selector button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.job-selector select:focus {
+  border-color: #2575fc;
+  outline: none;
+  box-shadow: 0 0 8px rgba(37, 117, 252, 0.3);
+}
+
+.job-selector button {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+}
+
+.job-selector button:hover {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  transform: scale(1.03);
+}
+
+/* Applicant list grid */
+.applicant-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Applicant card */
+.applicant-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.applicant-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Applicant card details */
+.applicant-card h2 {
+  margin-bottom: 8px;
+  font-size: 20px;
+  color: #333;
+}
+
+.applicant-card p {
+  margin: 5px 0;
+  font-size: 15px;
+  color: #555;
+}
+
+/* Tier badges */
+.tier-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  margin-left: 8px;
+  text-transform: uppercase;
+}
+
+.tier-badge.excellent { background-color: #28a745; }
+.tier-badge.good { background-color: #ffc107; color: #333; }
+.tier-badge.possible { background-color: #17a2b8; }
+.tier-badge.unlikely { background-color: #dc3545; }
+
+/* View Profile button */
+.applicant-card button {
+  margin-top: 12px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.applicant-card button:hover {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  transform: scale(1.03);
+}
