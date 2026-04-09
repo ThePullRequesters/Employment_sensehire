@@ -1,0 +1,81 @@
+.f02-container {
+    max-width: 700px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+.accordion {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.category-card {
+    border-bottom: 1px solid #ddd;
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 12px 16px;
+    background: #f9f9f9;
+    transition: background 0.2s;
+}
+
+.category-header:hover {
+    background: #ececec;
+}
+
+.icon {
+    font-size: 24px;
+    margin-right: 12px;
+}
+
+.arrow {
+    margin-left: auto;
+    font-size: 16px;
+}
+
+.subtypes {
+    background: #fff;
+    padding-left: 40px;
+    transition: all 0.3s ease;
+}
+
+.subtype-item {
+    padding: 8px 0;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.subtype-item:hover {
+    background: #f0f0f0;
+}
+
+.subtype-item.selected {
+    background: #d4f0fc;
+    border-left: 3px solid #00aaff;
+    padding-left: 8px;
+}
+
+.selection-summary {
+    margin-top: 16px;
+    font-weight: bold;
+}
+
+.confirm-btn {
+    margin-top: 12px;
+    padding: 10px 20px;
+    background: #00aaff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.confirm-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
